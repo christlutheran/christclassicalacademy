@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const description = "Learn about the admissions process at Christ Classical Academy, a classical Lutheran school initiative in Manhattan, Kansas.";
+const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
+---
+
+<Layout 
+  title="Admissions" 
+  description={description}
+  image={image}
+>
+  <section class="bg-hunter-green text-white py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">Admissions</h1>
+      <p class="text-xl max-w-3xl">
+        Join our community of learners pursuing wisdom, virtue, and eloquence through classical Lutheran education.
+      </p>
+    </div>
+  </section>
+  
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-academy-blue/10 p-6 rounded-lg border border-academy-blue/20 mb-8">
+          <h2 class="text-2xl font-bold mb-3 text-academy-blue font-serif">Planning Stage Announcement</h2>
+          <p class="text-gray-700 mb-4">
+            Christ Classical Academy is currently in the planning stages. This initiative is being led by Christ Lutheran Church in Manhattan, Kansas, with the goal of establishing a classical Lutheran school that serves our community.
+          </p>
+          <p class="text-gray-700">
+            We invite interested families to join our mailing list to receive updates on our progress, including information about enrollment timelines, informational meetings, and school opening dates. Please <a href="/contact" class="text-academy-blue hover:text-hunter-green hover:underline transition-all duration-300">contact us</a> to express your interest.
+          </p>
+        </div>
+        
+        <div class="bg-slate-50 p-8 rounded-lg shadow-md mb-12">
+          <h2 class="text-3xl font-bold mb-6 text-hunter-green font-serif">Planned Admissions Process</h2>
+          <p class="text-gray-700 mb-6">
+            While we are still in the planning stages, here is an overview of our anticipated admissions process once the school is established:
+          </p>
+          <ol class="space-y-6">
+            <li class="flex">
+              <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-academy-blue text-white font-bold mr-4 shadow-md">1</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-hunter-green font-serif">Inquire</h3>
+                <p class="text-gray-700">
+                  Complete our online inquiry form or contact our Admissions Office to receive information about our school and the application process.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-academy-blue text-white font-bold mr-4 shadow-md">2</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-hunter-green font-serif">Visit</h3>
+                <p class="text-gray-700">
+                  Schedule a campus tour to see our classical Lutheran education in action, meet our faculty, and experience our school culture firsthand.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-academy-blue text-white font-bold mr-4 shadow-md">3</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-hunter-green font-serif">Apply</h3>
+                <p class="text-gray-700">
+                  Submit a completed application form along with all required documentation, including previous academic records and a pastor's recommendation.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-academy-blue text-white font-bold mr-4 shadow-md">4</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-hunter-green font-serif">Assessment</h3>
+                <p class="text-gray-700">
+                  Students applying for grades 1-12 will complete an academic assessment to help us determine appropriate grade placement.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-academy-blue text-white font-bold mr-4 shadow-md">5</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-hunter-green font-serif">Family Interview</h3>
+                <p class="text-gray-700">
+                  Meet with our Headmaster to discuss your educational goals, our school's mission, and how we can partner together in your child's education.
+                </p>
+              </div>
+            </li>
+            <li class="flex">
+              <div class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-academy-blue text-white font-bold mr-4 shadow-md">6</div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-hunter-green font-serif">Enrollment</h3>
+                <p class="text-gray-700">
+                  Upon acceptance, complete the enrollment process by submitting the enrollment agreement and registration fee to secure your child's place.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        
+        <div class="bg-academy-blue text-white p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+          <h2 class="text-2xl font-bold mb-4 font-serif">Express Your Interest</h2>
+          <p class="mb-6">
+            While we are still in the planning stages, we invite you to express your interest in Christ Classical Academy. Join our mailing list to receive updates on our progress and be among the first to know when applications open.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a 
+              href="/contact" 
+              class="bg-white text-academy-blue hover:bg-gray-100 hover:text-academy-blue font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
+            >
+              Express Interest
+            </a>
+            <a 
+              href="/contact" 
+              class="bg-hunter-green hover:bg-opacity-90 text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

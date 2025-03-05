@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const description = "Page not found - Christ Classical Academy";
+const image = "https://images.unsplash.com/photo-1591585214068-50dca1a2ef14?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+// Set 404 status code
+Astro.response.status = 404;
+---
+
+<Layout 
+  title="Page Not Found" 
+  description={description}
+  image={image}
+>
+  <section class="bg-hunter-green text-white py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">404: Page Not Found</h1>
+      <p class="text-xl max-w-3xl">
+        We couldn't find the page you were looking for.
+      </p>
+    </div>
+  </section>
+  
+  <section class="py-16 bg-white">
+    <div class="container mx-auto">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="bg-slate-50 p-8 rounded-lg shadow-md mb-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+          <h2 class="text-3xl font-bold mb-6 text-hunter-green font-serif">We couldn't find that page</h2>
+          <p class="text-gray-700 mb-6">
+            The page you're looking for doesn't exist or has been moved.
+          </p>
+          <a href="/" class="bg-academy-blue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">
+            Return to Homepage
+          </a>
+        </div>
+        
+        <div class="mt-8">
+          <h3 class="text-xl font-bold mb-4 text-academy-blue font-serif">Looking for something specific?</h3>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="/about" class="bg-hunter-green text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in- out shadow-md hover:shadow-lg">About Us</a>
+            <a href="/academics" class="bg-hunter-green text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">Academics</a>
+            <a href="/admissions" class="bg-hunter-green text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">Admissions</a>
+            <a href="/support" class="bg-hunter-green text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">Support</a>
+            <a href="/contact" class="bg-hunter-green text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

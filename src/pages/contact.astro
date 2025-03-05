@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const description = "Contact Christ Classical Academy, a classical Lutheran school initiative in Manhattan, Kansas. Reach out with questions or to express interest in our educational mission.";
+const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
+---
+
+<Layout 
+  title="Contact Us" 
+  description={description}
+  image={image}
+>
+  <section class="bg-hunter-green text-white py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">Contact Us</h1>
+      <p class="text-xl max-w-3xl">
+        We'd love to hear from you. Reach out with questions about our classical Lutheran education initiative or to express your interest.
+      </p>
+    </div>
+  </section>
+  
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-academy-blue/10 p-6 rounded-lg border border-academy-blue/20 mb-8">
+          <h2 class="text-2xl font-bold mb-3 text-academy-blue font-serif">Planning Stage Announcement</h2>
+          <p class="text-gray-700 mb-4">
+            Christ Classical Academy is currently in the planning stages. This initiative is being led by Christ Lutheran Church in Manhattan, Kansas, with the goal of establishing a classical Lutheran school that serves our community.
+          </p>
+          <p class="text-gray-700">
+            We welcome inquiries from interested families, potential donors, and community members who wish to support this important educational initiative.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold mb-6 text-hunter-green font-serif">Get in Touch</h2>
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="firstName" class="block text-gray-700 font-medium mb-2">First Name</label>
+                  <input 
+                    type="text" 
+                    id="firstName" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-academy-blue"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                  <input 
+                    type="text" 
+                    id="lastName" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-academy-blue"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-academy-blue"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-academy-blue"
+                />
+              </div>
+              
+              <div>
+                <label for="inquiry" class="block text-gray-700 font-medium mb-2">Inquiry Type</label>
+                <select 
+                  id="inquiry" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-academy-blue"
+                  required
+                >
+                  <option value="">Select an option</option>
+                  <option value="prospective">Prospective Family</option>
+                  <option value="donor">Potential Donor</option>
+                  <option value="volunteer">Volunteer Interest</option>
+                  <option value="church">Church Member</option>
+                  <option value="general">General Question</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                <textarea 
+                  id="message" 
+                  rows="5" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-academy-blue"
+                  required
+                ></textarea>
+              </div>
+              
+              <button 
+                type="submit" 
+                class="bg-academy-blue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          
+          <div>
+            <h2 class="text-3xl font-bold mb-6 text-hunter-green font-serif">Contact Information</h2>
+            <div class="bg-slate-50 p-8 rounded-lg shadow-md">
+              <div class="space-y-6">
+                <div>
+                  <h3 class="text-xl font-bold mb-2 text-academy-blue font-serif">Christ Lutheran Church</h3>
+                  <p class="text-gray-700">
+                    4592 Green Valley Rd<br />
+                    Manhattan, KS 66502
+                  </p>
+                </div>
+                
+                <div>
+                  <h3 class="text-xl font-bold mb-2 text-academy-blue font-serif">Email</h3>
+                  <p class="text-gray-700">
+                    General Inquiries: info@christclassicalmanhattan.org<br />
+                    School Initiative: school@christclassicalmanhattan.org
+                  </p>
+                </div>
+                
+                <div class="pt-4">
+                  <h3 class="text-xl font-bold mb-4 text-academy-blue font-serif">Connect With Us</h3>
+                  <div class="flex space-x-4">
+                    <a href="#" class="text-academy-blue hover:text-hunter-green transition-all duration-300 transform hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8 bg-slate-50 p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-bold mb-4 text-academy-blue font-serif">Support Our Initiative</h3>
+              <p class="text-gray-700 mb-4">
+                Christ Classical Academy is a ministry initiative of Christ Lutheran Church in Manhattan, Kansas. We are seeking support from individuals and organizations who share our vision for classical Lutheran education in our community.
+              </p>
+              <a 
+                href="/support" 
+                class="bg-academy-blue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg inline-block"
+              >
+                Learn How to Support
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-12 bg-slate-50">
+    <div class="container mx-auto">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-hunter-green text-center font-serif">Ways to Support</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-academy-blue mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-hunter-green font-serif">Financial Support</h3>
+            <p class="text-gray-700 mb-4">
+              Your financial contributions will help fund startup costs, scholarships, and facility preparations. Donations to Christ Classical Academy through Christ Lutheran Church are tax-deductible.
+            </p>
+            <a href="/support" class="text-academy-blue hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-academy-blue mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-hunter-green font-serif">Volunteer</h3>
+            <p class="text-gray-700 mb-4">
+              Share your time and talents to help establish our school. We need volunteers with expertise in education, administration, marketing, fundraising, and facilities management.
+            </p>
+            <a href="/support" class="text-academy-blue hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
+              Get Involved
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+          
+          <div class="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-academy-blue mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-hunter-green font-serif">Attend Events</h3>
+            <p class="text-gray-700 mb-4">
+              Join us for informational meetings, fundraising events, and community gatherings as we build momentum for Christ Classical Academy. Stay informed by joining our mailing list.
+            </p>
+            <a href="/contact" class="text-academy-blue hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
+              Join Mailing List
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

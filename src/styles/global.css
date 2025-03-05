@@ -1,0 +1,22 @@
+/* Global button styles */
+
+/* Button hover transitions */
+.btn, 
+a[class*="bg-hunter-green"], 
+a[class*="bg-academy-blue"], 
+button[class*="bg-hunter-green"], 
+button[class*="bg-academy-blue"] {
+  transition: all 300ms ease-in-out;
+}
+
+/* Hunter Green buttons */
+.bg-hunter-green:hover {
+  background-color: #3A6E48 !important; /* Lighter hunter green */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Academy Blue buttons */
+.bg-academy-blue:hover {
+  background-color: #1A4181 !important; /* Lighter academy blue */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}

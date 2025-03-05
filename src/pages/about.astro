@@ -1,0 +1,177 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const description = "Learn about Christ Classical Academy, a classical Lutheran school initiative in Manhattan, Kansas providing education rooted in tradition, truth, and excellence.";
+const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
+---
+
+<Layout 
+  title="About Us" 
+  description={description}
+  image={image}
+>
+  <section class="bg-hunter-green text-white py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">About Christ Classical Academy</h1>
+      <p class="text-xl max-w-3xl">
+        A classical Lutheran school in Manhattan, Kansas providing education rooted in tradition, truth, and excellence.
+      </p>
+    </div>
+  </section>
+  
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6 text-hunter-green font-serif">Our Story</h2>
+          <p class="text-gray-700 mb-4">
+            The Christ Classical Academy initiative was started by members of Christ Lutheran Church who recognized the need for a school that combines academic excellence with faithful Christian teaching in the Manhattan area.
+          </p>
+          <p class="text-gray-700 mb-4">
+            Inspired by the classical education model that has formed scholars for centuries, our school is built on the conviction that truth, goodness, and beauty are objective realities that reflect the nature of God and can be known by human beings.
+          </p>
+          <p class="text-gray-700">
+            We are committed to partnering with parents to provide an education that nurtures the whole child—mind, body, and spirit—preparing them not just for college or career, but for a life of wisdom and virtue.
+          </p>
+        </div>
+        <div class="bg-slate-50 p-8 rounded-lg shadow-md">
+          <h3 class="text-2xl font-bold mb-4 text-academy-blue font-serif">Classical Lutheran Education Defined</h3>
+          <p class="text-gray-700 mb-4">
+            Classical Lutheran education is a time-tested approach to learning with a rich history dating back to the Reformation. Martin Luther and his colleague Philip Melanchton were strong advocates for educational reform, and their work helped to shape what we now call classical Lutheran education.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Teaches all subjects as parts of an integrated whole with the Scriptures at the center</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Follows the classical model of the Trivium (Grammar, Logic, and Rhetoric stages)</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Cultivates wisdom and virtue through immersion in the liberal arts and sciences</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Recognizes that all knowledge is unified in Christ, in whom "are hidden all the treasures of wisdom and knowledge" (Colossians 2:3)</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Prepares students to serve faithfully in their various vocations</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-12 bg-gradient-to-b from-slate-50 to-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-hunter-green text-center font-serif">Why Classical Lutheran Education?</h2>
+      <div class="max-w-4xl mx-auto">
+        <p class="text-gray-700 mb-6 text-center">
+          In an age of educational experimentation and rapidly changing pedagogical theories, classical Lutheran education offers a proven, time-tested approach to forming young people intellectually, spiritually, and morally.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-md border-t-2 border-academy-blue transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-academy-blue mb-3 font-serif">Tools of Learning</h3>
+            <p class="text-gray-700">
+              Equips students with the tools of learning, enabling them to become lifelong learners rather than merely teaching them facts.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md border-t-2 border-academy-blue transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-academy-blue mb-3 font-serif">Great Conversation</h3>
+            <p class="text-gray-700">
+              Immerses students in the great conversation of Western civilization, connecting them to the wisdom of the past.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md border-t-2 border-academy-blue transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-academy-blue mb-3 font-serif">Wisdom & Virtue</h3>
+            <p class="text-gray-700">
+              Cultivates wisdom and virtue rather than merely imparting information, forming character as well as intellect.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md border-t-2 border-academy-blue transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-academy-blue mb-3 font-serif">Thoughtful Service</h3>
+            <p class="text-gray-700">
+              Prepares students for thoughtful service in church and society, equipping them to be leaders in their communities.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md border-t-2 border-academy-blue transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-academy-blue mb-3 font-serif">Faith & Learning</h3>
+            <p class="text-gray-700">
+              Integrates faith and learning rather than compartmentalizing them, showing how all knowledge is connected in Christ.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md border-t-2 border-academy-blue transform transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <h3 class="text-xl font-bold text-academy-blue mb-3 font-serif">Childhood Vocation</h3>
+            <p class="text-gray-700">
+              Honors the vocation of childhood rather than treating children as mini-adults, respecting their developmental stages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-12 bg-white">
+    <div class="container mx-auto">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-hunter-green text-center font-serif">Statement of Faith</h2>
+        <div class="bg-slate-50 p-8 rounded-lg shadow-md">
+          <div class="prose prose-lg mx-auto text-gray-700">
+            <p>
+              Christ Classical Academy adheres to the historic Lutheran confessions, particularly as expressed in the Book of Concord. We believe:
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>The Bible is the inspired and inerrant Word of God, the only infallible rule of faith and practice.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>In the Triune God: Father, Son, and Holy Spirit.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>In the deity of Christ, His virgin birth, His sinless life, His miracles, His atoning death, His resurrection, His ascension, and His future return in power and glory.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>That salvation is by grace alone, through faith alone, in Christ alone.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-academy-blue mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>In the spiritual unity of believers in our Lord Jesus Christ.</span>
+              </li>
+            </ul>
+            <p class="mt-4">
+              Our full doctrinal statement is available upon request, and we welcome conversations with prospective families about our theological commitments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

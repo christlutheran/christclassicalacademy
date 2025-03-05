@@ -1,0 +1,21 @@
+{
+  "name": "christ-classical-academy",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^5.2.5",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "decap-cms-app": "^3.1.3"
+  }
+}

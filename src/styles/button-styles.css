@@ -1,0 +1,73 @@
+/* Button Styles */
+.btn {
+  @apply font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md;
+}
+
+.btn:hover {
+  @apply shadow-lg;
+}
+
+/* Primary Buttons */
+.btn-primary {
+  @apply bg-academy-blue text-white;
+}
+
+.btn-primary:hover {
+  @apply bg-hunter-green text-white;
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+  @apply bg-hunter-green text-white;
+}
+
+.btn-secondary:hover {
+  @apply bg-academy-blue text-white;
+}
+
+/* White Buttons */
+.btn-white {
+  @apply bg-white;
+}
+
+.btn-white.text-academy-blue:hover {
+  @apply bg-gray-100 text-hunter-green;
+}
+
+.btn-white.text-hunter-green:hover {
+  @apply bg-gray-100 text-academy-blue;
+}
+
+/* Outline Buttons */
+.btn-outline {
+  @apply bg-transparent border-2 border-white text-white;
+}
+
+.btn-outline:hover {
+  @apply bg-white text-hunter-green;
+}
+
+/* Link Buttons */
+.link-hover {
+  @apply transition-all duration-300;
+}
+
+.link-hover:hover {
+  @apply underline;
+}
+
+.link-academy-blue {
+  @apply text-academy-blue;
+}
+
+.link-academy-blue:hover {
+  @apply text-hunter-green;
+}
+
+.link-hunter-green {
+  @apply text-hunter-green;
+}
+
+.link-hunter-green:hover {
+  @apply text-academy-blue;
+}
