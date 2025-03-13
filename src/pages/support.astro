@@ -1,8 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FundraisingProgress from '../components/FundraisingProgress.astro';
 
 const description = "Support Christ Classical Academy, a classical Lutheran school initiative in Manhattan, Kansas. Learn how you can contribute to our mission through donations, volunteering, or advocacy.";
 const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
+
+// Fundraising data
+const fundraisingData = {
+  goal: 200000,
+  current: 0,
+  startDate: '2025-03-15',
+  endDate: '2026-05-15'
+};
 ---
 
 <Layout 
@@ -14,7 +23,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
     <div class="container mx-auto">
       <h1 class="text-4xl md:text-5xl font-bold mb-6 font-serif">Support Our Mission</h1>
       <p class="text-xl max-w-3xl">
-        Join us in establishing Christ Classical Academy, a ministry initiative of Christ Lutheran Church in Manhattan, Kansas.
+        Join us in establishing Christ Classical Academy in Manhattan, Kansas. Opening Fall 2026 with your support.
       </p>
     </div>
   </section>
@@ -22,22 +31,24 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
   <section class="py-12 bg-white">
     <div class="container mx-auto">
       <div class="max-w-4xl mx-auto">
-        <div class="bg-academy-blue/10 p-6 rounded-lg border border-academy-blue/20 mb-8">
-          <h2 class="text-2xl font-bold mb-3 text-academy-blue font-serif">Planning Stage Announcement</h2>
+        <div class="bg-royal-purple/10 p-6 rounded-lg border border-royal-purple/20 mb-8">
+          <h2 class="text-2xl font-bold mb-3 text-royal-purple font-serif">Our Goal: $200,000 by May 2026</h2>
           <p class="text-gray-700 mb-4">
-            Christ Classical Academy is currently in the planning stages. This initiative is being led by Christ Lutheran Church in Manhattan, Kansas, with the goal of establishing a classical Lutheran school that serves our community.
+            The members of Christ Lutheran Church have unanimously voted to establish Christ Classical Academy, launching a fundraising campaign to raise $200,000 by May 2026 to open our doors in Fall 2026.
           </p>
           <p class="text-gray-700">
             Your support at this critical early stage will help us lay a strong foundation for this important educational ministry.
           </p>
         </div>
+
+        <FundraisingProgress {...fundraisingData} />
         
-        <h2 class="text-3xl font-bold mb-8 text-hunter-green font-serif">Ways to Support</h2>
+        <h2 class="text-3xl font-bold mb-8 mt-12 text-hunter-green font-serif">Ways to Support</h2>
         
         <div class="space-y-8 mb-12">
           <div class="bg-slate-50 p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
             <div class="flex items-start">
-              <div class="text-academy-blue mr-6">
+              <div class="text-royal-purple mr-6">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -57,29 +68,29 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                   All donations to Christ Classical Academy through Christ Lutheran Church are tax-deductible. We offer several ways to give:
                 </p>
                 <div class="space-y-4">
-                  <div class="bg-white p-4 rounded border border-gray-200 transition-all duration-300 hover:border-academy-blue hover:shadow-md">
-                    <h4 class="font-bold text-academy-blue mb-2">One-Time Gifts</h4>
+                  <div class="bg-white p-4 rounded border border-gray-200 transition-all duration-300 hover:border-royal-purple hover:shadow-md">
+                    <h4 class="font-bold text-royal-purple mb-2">One-Time Gifts</h4>
                     <p class="text-gray-700">
                       Make a one-time donation of any amount to support our school initiative.
                     </p>
                   </div>
-                  <div class="bg-white p-4 rounded border border-gray-200 transition-all duration-300 hover:border-academy-blue hover:shadow-md">
-                    <h4 class="font-bold text-academy-blue mb-2">Recurring Support</h4>
+                  <div class="bg-white p-4 rounded border border-gray-200 transition-all duration-300 hover:border-royal-purple hover:shadow-md">
+                    <h4 class="font-bold text-royal-purple mb-2">Monthly Support</h4>
                     <p class="text-gray-700">
                       Become a monthly supporter to provide sustainable funding during our planning and launch phases.
                     </p>
                   </div>
-                  <div class="bg-white p-4 rounded border border-gray-200 transition-all duration-300 hover:border-academy-blue hover:shadow-md">
-                    <h4 class="font-bold text-academy-blue mb-2">Founding Donors</h4>
+                  <div class="bg-white p-4 rounded border border-gray-200 transition-all duration-300 hover:border-royal-purple hover:shadow-md">
+                    <h4 class="font-bold text-royal-purple mb-2">Founding Donors</h4>
                     <p class="text-gray-700">
-                      Join our Founding Donors circle with a significant gift that will be recognized in our school's founding documents and future facility.
+                      Join our Founding Donors circle with a significant gift that will be recognized in our school's founding documents.
                     </p>
                   </div>
                 </div>
                 <div class="mt-6">
                   <a 
                     href="/contact" 
-                    class="bg-academy-blue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg inline-block"
+                    class="bg-royal-purple text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg inline-block"
                   >
                     Donate Now
                   </a>
@@ -90,7 +101,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
           
           <div class="bg-slate-50 p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
             <div class="flex items-start">
-              <div class="text-academy-blue mr-6">
+              <div class="text-royal-purple mr-6">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
@@ -122,7 +133,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
           
           <div class="bg-slate-50 p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
             <div class="flex items-start">
-              <div class="text-academy-blue mr-6">
+              <div class="text-royal-purple mr-6">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
                 </svg>
@@ -142,7 +153,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                 <div class="mt-6">
                   <a 
                     href="/contact" 
-                    class="bg-academy-blue text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg inline-block"
+                    class="bg-royal-purple text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg inline-block"
                   >
                     Become an Advocate
                   </a>

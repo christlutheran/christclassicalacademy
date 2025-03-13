@@ -3,20 +3,68 @@
 /* Button hover transitions */
 .btn, 
 a[class*="bg-hunter-green"], 
-a[class*="bg-academy-blue"], 
+a[class*="bg-royal-purple"], 
 button[class*="bg-hunter-green"], 
-button[class*="bg-academy-blue"] {
-  transition: all 300ms ease-in-out;
+button[class*="bg-royal-purple"] {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hunter Green buttons */
-.bg-hunter-green:hover {
-  background-color: #3A6E48 !important; /* Lighter hunter green */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+.bg-hunter-green {
+  background-color: #2A4E38;
 }
 
-/* Academy Blue buttons */
-.bg-academy-blue:hover {
-  background-color: #1A4181 !important; /* Lighter academy blue */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+.bg-hunter-green:hover {
+  background-color: #4A7E58 !important; /* Much lighter hunter green */
+  transform: translateY(-3px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Royal Purple buttons */
+.bg-royal-purple {
+  background-color: #4A2B83;
+}
+
+.bg-royal-purple:hover {
+  background-color: #6A4BA3 !important; /* Much lighter royal purple */
+  transform: translateY(-3px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* White buttons */
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-white:hover {
+  background-color: #F9FAFB !important;
+  transform: translateY(-3px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Link hover effects */
+a.text-royal-purple {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a.text-royal-purple:hover {
+  color: #6A4BA3;
+}
+
+a.text-hunter-green {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a.text-hunter-green:hover {
+  color: #4A7E58;
+}
+
+/* Button shadow effects */
+.shadow-hover {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shadow-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }

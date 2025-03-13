@@ -4,16 +4,16 @@
 }
 
 .btn:hover {
-  @apply shadow-lg;
+  @apply shadow-xl transform -translate-y-1;
 }
 
 /* Primary Buttons */
 .btn-primary {
-  @apply bg-academy-blue text-white;
+  @apply bg-royal-purple text-white;
 }
 
 .btn-primary:hover {
-  @apply bg-hunter-green text-white;
+  @apply bg-[#6A4BA3] text-white;
 }
 
 /* Secondary Buttons */
@@ -22,7 +22,7 @@
 }
 
 .btn-secondary:hover {
-  @apply bg-academy-blue text-white;
+  @apply bg-[#4A7E58] text-white;
 }
 
 /* White Buttons */
@@ -30,21 +30,33 @@
   @apply bg-white;
 }
 
-.btn-white.text-academy-blue:hover {
-  @apply bg-gray-100 text-hunter-green;
+.btn-white.text-royal-purple:hover {
+  @apply bg-gray-50 text-[#6A4BA3];
 }
 
 .btn-white.text-hunter-green:hover {
-  @apply bg-gray-100 text-academy-blue;
+  @apply bg-gray-50 text-[#4A7E58];
 }
 
 /* Outline Buttons */
 .btn-outline {
-  @apply bg-transparent border-2 border-white text-white;
+  @apply bg-transparent border-2 transition-all duration-300;
 }
 
-.btn-outline:hover {
-  @apply bg-white text-hunter-green;
+.btn-outline-royal-purple {
+  @apply border-royal-purple text-royal-purple;
+}
+
+.btn-outline-royal-purple:hover {
+  @apply bg-royal-purple text-white transform -translate-y-1 shadow-xl;
+}
+
+.btn-outline-hunter-green {
+  @apply border-hunter-green text-hunter-green;
+}
+
+.btn-outline-hunter-green:hover {
+  @apply bg-hunter-green text-white transform -translate-y-1 shadow-xl;
 }
 
 /* Link Buttons */
@@ -56,12 +68,12 @@
   @apply underline;
 }
 
-.link-academy-blue {
-  @apply text-academy-blue;
+.link-royal-purple {
+  @apply text-royal-purple;
 }
 
-.link-academy-blue:hover {
-  @apply text-hunter-green;
+.link-royal-purple:hover {
+  @apply text-[#6A4BA3];
 }
 
 .link-hunter-green {
@@ -69,5 +81,5 @@
 }
 
 .link-hunter-green:hover {
-  @apply text-academy-blue;
+  @apply text-[#4A7E58];
 }
