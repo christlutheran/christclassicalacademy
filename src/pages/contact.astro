@@ -38,9 +38,9 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
             <form 
               name="contact"
               method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
               netlify-honeypot="bot-field"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
               class="space-y-6"
             >
               <p class="hidden">
@@ -106,8 +106,6 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                   <option value="">Select an option</option>
                   <option value="prospective">Prospective Family</option>
                   <option value="donor">Potential Donor</option>
-                  <option value="volunteer">Volunteer Interest</option>
-                  <option value="church">Church Member</option>
                   <option value="general">General Question</option>
                 </select>
               </div>
@@ -122,6 +120,8 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                   required
                 ></textarea>
               </div>
+
+              <div data-netlify-recaptcha="true"></div>
               
               <button 
                 type="submit" 
@@ -156,7 +156,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                       <span class="sr-only">Christ Lutheran Church</span>
                       <i class="fa-solid fa-church text-2xl"></i>
                     </a>
-                    <a href="https://www.facebook.com/christlutheranmanhattan" class="text-royal-purple hover:text-hunter-green transition-all duration-300 transform hover:scale-110" target="_blank">
+                    <a href="https://www.facebook.com/people/Christ-Lutheran-Church-Missouri-Synod/100064606092871/" class="text-royal-purple hover:text-hunter-green transition-all duration-300 transform hover:scale-110" target="_blank">
                       <span class="sr-only">Facebook</span>
                       <i class="fa-brands fa-facebook text-2xl"></i>
                     </a>
@@ -187,45 +187,71 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
     <div class="container mx-auto">
       <div class="max-w-5xl mx-auto">
         <h2 class="text-3xl font-bold mb-8 text-hunter-green text-center font-serif">Ways to Support</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div class="text-royal-purple mb-4">
-              <i class="fa-solid fa-hand-holding-dollar text-3xl"></i>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-royal-purple mb-6">
+              <i class="fa-solid fa-hand-holding-dollar text-4xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3 text-hunter-green font-serif">Financial Support</h3>
-            <p class="text-gray-700 mb-4">
+            <h3 class="text-2xl font-bold mb-4 text-hunter-green font-serif">Financial Support</h3>
+            <p class="text-gray-700 mb-6">
               Your financial contributions will help fund startup costs, scholarships, and facility preparations. Donations to Christ Classical Academy through Christ Lutheran Church are tax-deductible.
             </p>
+            <ul class="text-gray-700 space-y-3 mb-6">
+              <li class="flex items-start">
+                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Support initial facility preparations</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Fund curriculum development</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Establish scholarship programs</span>
+              </li>
+            </ul>
             <a href="/support" class="text-royal-purple hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
-              Learn More
+              Learn More About Giving
               <i class="fa-solid fa-arrow-right ml-2"></i>
             </a>
           </div>
           
-          <div class="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div class="text-royal-purple mb-4">
-              <i class="fa-solid fa-users text-3xl"></i>
+          <div class="bg-white p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <div class="text-royal-purple mb-6">
+              <i class="fa-solid fa-calendar-alt text-4xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3 text-hunter-green font-serif">Volunteer</h3>
-            <p class="text-gray-700 mb-4">
-              Share your time and talents to help establish our school. We need volunteers with expertise in education, administration, marketing, fundraising, and facilities management.
+            <h3 class="text-2xl font-bold mb-4 text-hunter-green font-serif">Attend Events</h3>
+            <p class="text-gray-700 mb-6">
+              Join us for informational meetings, fundraising events, and community gatherings as we build momentum for Christ Classical Academy. Stay informed about upcoming events and opportunities to get involved.
             </p>
-            <a href="/support" class="text-royal-purple hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
-              Get Involved
-              <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div class="text-royal-purple mb-4">
-              <i class="fa-solid fa-calendar-alt text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3 text-hunter-green font-serif">Attend Events</h3>
-            <p class="text-gray-700 mb-4">
-              Join us for informational meetings, fundraising events, and community gatherings as we build momentum for Christ Classical Academy. Stay informed by joining our mailing list.
-            </p>
+            <ul class="text-gray-700 space-y-3 mb-6">
+              <li class="flex items-start">
+                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Informational meetings</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Fundraising events</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Community gatherings</span>
+              </li>
+            </ul>
             <a href="/contact" class="text-royal-purple hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
-              Join Mailing List
+              Stay Informed
               <i class="fa-solid fa-arrow-right ml-2"></i>
             </a>
           </div>

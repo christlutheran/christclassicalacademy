@@ -6,13 +6,42 @@ export interface Props {
   title: string;
   description?: string;
   image?: string;
+  type?: string;
+  canonicalURL?: string;
 }
 
 const { 
   title, 
   description = "Christ Classical Academy - A Classical Lutheran School in Manhattan, Kansas providing education rooted in tradition, truth, and excellence.",
-  image = "https://images.unsplash.com/photo-1591585214068-50dca1a2ef14?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  image = "https://images.unsplash.com/photo-1591585214068-50dca1a2ef14?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  type = "website",
+  canonicalURL = new URL(Astro.url.pathname, Astro.site).href
 } = Astro.props;
+
+const siteTitle = `${title} | Christ Classical Academy`;
+
+// Structured data for organization
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Christ Classical Academy",
+  "url": "https://christclassicalmanhattan.org",
+  "logo": image,
+  "description": description,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4592 Green Valley Rd",
+    "addressLocality": "Manhattan",
+    "addressRegion": "KS",
+    "postalCode": "66502",
+    "addressCountry": "US"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Christ Lutheran Church",
+    "url": "https://www.christlutheranmanhattan.org"
+  }
+};
 ---
 
 <!doctype html>
@@ -20,25 +49,40 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- Primary Meta Tags -->
-    <title>{title} | Christ Classical Academy</title>
-    <meta name="title" content={`${title} | Christ Classical Academy`} />
+    <title>{siteTitle}</title>
+    <meta name="title" content={siteTitle} />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
     
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={`${title} | Christ Classical Academy`} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="Christ Classical Academy" />
+    <meta property="og:locale" content="en_US" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content={`${title} | Christ Classical Academy`} />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={siteTitle} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={image} />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="author" content="Christ Classical Academy" />
+    <meta name="keywords" content="classical education, Lutheran school, Manhattan Kansas, Christian education, classical Lutheran education, private school, Christ Classical Academy" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,6 +91,24 @@ const {
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    
+    <!-- Analytics -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//stats.agrinux.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '8']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
   </head>
   <body class="min-h-screen flex flex-col font-sans bg-slate-50">
     <Header />

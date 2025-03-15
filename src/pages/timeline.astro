@@ -22,68 +22,131 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
   <section class="py-12 bg-white">
     <div class="container mx-auto">
       <div class="max-w-4xl mx-auto">
-        <div class="space-y-12">
-          <div class="relative pl-8 sm:pl-48 py-6 group">
-            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-[4.5rem] before:h-full before:px-px before:bg-slate-300 before:ml-[0.45rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-[4.5rem] after:w-2 after:h-2 after:bg-hunter-green after:border-4 after:box-content after:border-slate-50 after:rounded-full after:ml-[0.45rem] after:-translate-x-1/2">
-              <div class="sm:min-w-[180px] text-xl font-bold text-hunter-green mb-2 sm:mb-0">January 2025</div>
-              <div class="sm:pl-8">
+        <div class="relative space-y-8">
+          <!-- Vertical line running through all timeline items -->
+          <div class="absolute left-4 md:left-1/2 h-full w-0.5 bg-slate-200 transform -translate-x-1/2"></div>
+
+          <!-- January 2025 -->
+          <div class="relative flex md:justify-between group" data-date="2025-01">
+            <div class="hidden md:block md:w-5/12"></div>
+            <div class="absolute left-4 md:left-1/2 w-6 h-6 bg-hunter-green rounded-full border-4 border-white shadow transform -translate-x-1/2 flex items-center justify-center z-10">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div class="ml-12 md:ml-0 md:w-5/12">
+              <div class="bg-slate-50 p-6 rounded-lg shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+                <div class="text-xl font-bold text-hunter-green mb-2">January 2025</div>
                 <div class="text-xl font-bold text-hunter-green mb-2">Church Vote & Fundraising Launch</div>
                 <div class="text-gray-600">Church members unanimously vote to establish the school. Launch of fundraising campaign with a goal of $200,000.</div>
               </div>
             </div>
           </div>
 
-          <div class="relative pl-8 sm:pl-48 py-6 group">
-            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-[4.5rem] before:h-full before:px-px before:bg-slate-300 before:ml-[0.45rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-[4.5rem] after:w-2 after:h-2 after:bg-hunter-green after:border-4 after:box-content after:border-slate-50 after:rounded-full after:ml-[0.45rem] after:-translate-x-1/2">
-              <div class="sm:min-w-[180px] text-xl font-bold text-hunter-green mb-2 sm:mb-0">April 2026</div>
-              <div class="sm:pl-8">
+          <!-- April 2026 -->
+          <div class="relative flex md:justify-between group" data-date="2026-04">
+            <div class="ml-12 md:ml-0 md:w-5/12">
+              <div class="bg-slate-50 p-6 rounded-lg shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-lg md:mr-8">
+                <div class="text-xl font-bold text-hunter-green mb-2">April 2026</div>
                 <div class="text-xl font-bold text-hunter-green mb-2">Teacher Hiring</div>
                 <div class="text-gray-600">Church approval for teacher hire and beginning of faculty recruitment.</div>
               </div>
             </div>
+            <div class="absolute left-4 md:left-1/2 w-6 h-6 bg-hunter-green rounded-full border-4 border-white shadow transform -translate-x-1/2 flex items-center justify-center z-10">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div class="hidden md:block md:w-5/12"></div>
           </div>
 
-          <div class="relative pl-8 sm:pl-48 py-6 group">
-            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-[4.5rem] before:h-full before:px-px before:bg-slate-300 before:ml-[0.45rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-[4.5rem] after:w-2 after:h-2 after:bg-hunter-green after:border-4 after:box-content after:border-slate-50 after:rounded-full after:ml-[0.45rem] after:-translate-x-1/2">
-              <div class="sm:min-w-[180px] text-xl font-bold text-hunter-green mb-2 sm:mb-0">August 2026</div>
-              <div class="sm:pl-8">
+          <!-- August 2026 -->
+          <div class="relative flex md:justify-between group" data-date="2026-08">
+            <div class="hidden md:block md:w-5/12"></div>
+            <div class="absolute left-4 md:left-1/2 w-6 h-6 bg-hunter-green rounded-full border-4 border-white shadow transform -translate-x-1/2 flex items-center justify-center z-10">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div class="ml-12 md:ml-0 md:w-5/12">
+              <div class="bg-slate-50 p-6 rounded-lg shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+                <div class="text-xl font-bold text-hunter-green mb-2">August 2026</div>
                 <div class="text-xl font-bold text-hunter-green mb-2">School Launch</div>
                 <div class="text-gray-600">Opening our doors to 10-14 students for our inaugural academic year.</div>
               </div>
             </div>
           </div>
 
-          <div class="relative pl-8 sm:pl-48 py-6 group">
-            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-[4.5rem] before:h-full before:px-px before:bg-slate-300 before:ml-[0.45rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-[4.5rem] after:w-2 after:h-2 after:bg-hunter-green after:border-4 after:box-content after:border-slate-50 after:rounded-full after:ml-[0.45rem] after:-translate-x-1/2">
-              <div class="sm:min-w-[180px] text-xl font-bold text-hunter-green mb-2 sm:mb-0">August 2027</div>
-              <div class="sm:pl-8">
+          <!-- August 2027 -->
+          <div class="relative flex md:justify-between group" data-date="2027-08">
+            <div class="ml-12 md:ml-0 md:w-5/12">
+              <div class="bg-slate-50 p-6 rounded-lg shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-lg md:mr-8">
+                <div class="text-xl font-bold text-hunter-green mb-2">August 2027</div>
                 <div class="text-xl font-bold text-hunter-green mb-2">Growth Phase</div>
                 <div class="text-gray-600">Expanding enrollment to 20 students.</div>
               </div>
             </div>
+            <div class="absolute left-4 md:left-1/2 w-6 h-6 bg-hunter-green rounded-full border-4 border-white shadow transform -translate-x-1/2 flex items-center justify-center z-10">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div class="hidden md:block md:w-5/12"></div>
           </div>
 
-          <div class="relative pl-8 sm:pl-48 py-6 group">
-            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-[4.5rem] before:h-full before:px-px before:bg-slate-300 before:ml-[0.45rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-[4.5rem] after:w-2 after:h-2 after:bg-hunter-green after:border-4 after:box-content after:border-slate-50 after:rounded-full after:ml-[0.45rem] after:-translate-x-1/2">
-              <div class="sm:min-w-[180px] text-xl font-bold text-hunter-green mb-2 sm:mb-0">August 2028</div>
-              <div class="sm:pl-8">
+          <!-- August 2028 -->
+          <div class="relative flex md:justify-between group" data-date="2028-08">
+            <div class="hidden md:block md:w-5/12"></div>
+            <div class="absolute left-4 md:left-1/2 w-6 h-6 bg-hunter-green rounded-full border-4 border-white shadow transform -translate-x-1/2 flex items-center justify-center z-10">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div class="ml-12 md:ml-0 md:w-5/12">
+              <div class="bg-slate-50 p-6 rounded-lg shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+                <div class="text-xl font-bold text-hunter-green mb-2">August 2028</div>
                 <div class="text-xl font-bold text-hunter-green mb-2">Further Expansion</div>
                 <div class="text-gray-600">Hiring second teacher and growing to 30 students.</div>
               </div>
             </div>
           </div>
 
-          <div class="relative pl-8 sm:pl-48 py-6 group">
-            <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-[4.5rem] before:h-full before:px-px before:bg-slate-300 before:ml-[0.45rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-[4.5rem] after:w-2 after:h-2 after:bg-hunter-green after:border-4 after:box-content after:border-slate-50 after:rounded-full after:ml-[0.45rem] after:-translate-x-1/2">
-              <div class="sm:min-w-[180px] text-xl font-bold text-hunter-green mb-2 sm:mb-0">December 2028</div>
-              <div class="sm:pl-8">
+          <!-- December 2028 -->
+          <div class="relative flex md:justify-between group" data-date="2028-12">
+            <div class="ml-12 md:ml-0 md:w-5/12">
+              <div class="bg-slate-50 p-6 rounded-lg shadow-md transform transition duration-300 hover:-translate-y-2 hover:shadow-lg md:mr-8">
+                <div class="text-xl font-bold text-hunter-green mb-2">December 2028</div>
                 <div class="text-xl font-bold text-hunter-green mb-2">CCLE Accreditation</div>
                 <div class="text-gray-600">Achieving Consortium for Classical Lutheran Education accreditation.</div>
               </div>
             </div>
+            <div class="absolute left-4 md:left-1/2 w-6 h-6 bg-hunter-green rounded-full border-4 border-white shadow transform -translate-x-1/2 flex items-center justify-center z-10">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+            </div>
+            <div class="hidden md:block md:w-5/12"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  /* Ensure the timeline line extends fully */
+  .relative.space-y-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Smooth transitions for hover effects */
+  .group {
+    transition: all 300ms ease-in-out;
+  }
+
+  /* Enhanced dot styling */
+  .rounded-full {
+    transition: all 300ms ease-in-out;
+  }
+
+  .group:hover .rounded-full {
+    transform: scale(1.2) translateX(-50%);
+    box-shadow: 0 0 0 3px rgba(42, 78, 56, 0.2);
+  }
+
+  /* Mobile timeline adjustments */
+  @media (max-width: 767px) {
+    .ml-12 {
+      margin-left: 3rem;
+    }
+  }
+</style>
