@@ -1,4 +1,4 @@
 User-agent: *
+Disallow: /private/
 Allow: /
-
-Sitemap: https://christclassicalmanhattan.org/sitemap.xml
+Sitemap: https://www.christclassicalmanhattan.org/sitemap-index.xml
