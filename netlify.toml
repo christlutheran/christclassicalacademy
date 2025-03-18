@@ -1,0 +1,11 @@
+[[redirects]]
+from = "https://www.christclassicalmanhattan.com/*"
+to = "https://www.christclassicalmanhattan.org/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://christclassicalmanhattan.com/*"
+to = "https://www.christclassicalmanhattan.org/:splat"
+status = 301
+force = true
