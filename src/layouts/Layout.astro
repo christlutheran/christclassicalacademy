@@ -18,13 +18,13 @@ const {
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href
 } = Astro.props;
 
-const siteTitle = `${title} | Christ Classical Academy`;
+const siteTitle = `${title} | Christ Classical Academy | Manhattan KS`;
 
 // Structured data for organization
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
-  "name": "Christ Classical Academy",
+  "name": "Christ Classical Academy Manhattan KS",
   "url": "https://christclassicalmanhattan.org",
   "logo": image,
   "description": description,
@@ -38,7 +38,7 @@ const organizationSchema = {
   },
   "parentOrganization": {
     "@type": "Organization",
-    "name": "Christ Lutheran Church",
+    "name": "Christ Lutheran Church Manhattan KS",
     "url": "https://www.christlutheranmanhattan.org"
   }
 };
