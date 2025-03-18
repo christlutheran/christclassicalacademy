@@ -29,7 +29,7 @@ const image = "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixli
           </p>
         </div>
 
-        <div class="space-y-6 mb-12">
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
           <div class="bg-slate-50 p-6 rounded-lg shadow-md">
             <h3 class="text-xl font-bold mb-3 text-hunter-green">Christ-Centered Mission</h3>
             <p class="text-gray-700">The school's mission is deeply rooted in the Gospel of Jesus Christ, influencing all aspects of its educational endeavors.</p>
@@ -127,3 +127,33 @@ const image = "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixli
     </div>
   </section>
 </Layout>
+
+<style>
+  /* Ensure the timeline line extends fully */
+  .relative.space-y-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Smooth transitions for hover effects */
+  .group {
+    transition: all 300ms ease-in-out;
+  }
+
+  /* Enhanced dot styling */
+  .rounded-full {
+    transition: all 300ms ease-in-out;
+  }
+
+  .group:hover .rounded-full {
+    transform: scale(1.2) translateX(-50%);
+    box-shadow: 0 0 0 3px rgba(42, 78, 56, 0.2);
+  }
+
+  /* Mobile timeline adjustments */
+  @media (max-width: 767px) {
+    .ml-12 {
+      margin-left: 3rem;
+    }
+  }
+</style>

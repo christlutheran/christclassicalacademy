@@ -1,17 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FundraisingProgress from '../components/FundraisingProgress.astro';
+import { fundraisingConfig } from '../config/fundraising';
 
 const description = "Support Christ Classical Academy, a classical Lutheran school initiative in Manhattan, Kansas. Learn how you can contribute to our mission through donations, volunteering, or advocacy.";
 const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
-
-// Fundraising data
-const fundraisingData = {
-  goal: 200000,
-  current: 0,
-  startDate: '2025-03-15',
-  endDate: '2026-05-15'
-};
 ---
 
 <Layout 
@@ -41,7 +34,7 @@ const fundraisingData = {
           </p>
         </div>
 
-        <FundraisingProgress {...fundraisingData} />
+        <FundraisingProgress {...fundraisingConfig} />
         
         <h2 class="text-3xl font-bold mb-8 mt-12 text-hunter-green font-serif">Ways to Support</h2>
         

@@ -1,12 +1,19 @@
 ---
+import { fundraisingConfig } from '../config/fundraising';
+
 interface Props {
-  goal: number;
-  current: number;
-  startDate: string;
-  endDate: string;
+  goal?: number;
+  current?: number;
+  startDate?: string;
+  endDate?: string;
 }
 
-const { goal, current, startDate, endDate } = Astro.props;
+const { 
+  goal = fundraisingConfig.goal,
+  current = fundraisingConfig.raised,
+  startDate = fundraisingConfig.startDate,
+  endDate = fundraisingConfig.endDate
+} = Astro.props;
 
 const percentComplete = Math.min(Math.round((current / goal) * 100), 100);
 const formattedGoal = goal.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
