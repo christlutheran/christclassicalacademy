@@ -1,0 +1,113 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Subscribe to Our Newsletter",
+  description = "Get the latest updates, news, and events from Christ Classical Academy delivered to your inbox."
+} = Astro.props;
+---
+
+<div id="mc_embed_signup" class="bg-royal-purple/10 border border-royal-purple/20 p-6 rounded-lg shadow-md mx-auto mb-20">
+  <form 
+    action="https://christclassicalmanhattan.us21.list-manage.com/subscribe/post?u=9e75c8bd2a9d92ce99e07891d&amp;id=b1d16bce7d&amp;f_id=00a59ee6f0" 
+    method="post" 
+    id="mc-embedded-subscribe-form" 
+    name="mc-embedded-subscribe-form" 
+    class="space-y-4"
+    target="_blank"
+  >
+    <h2 class="text-xl font-bold text-royal-purple font-serif text-center">{title}</h2>
+    <p class="text-gray-700 text-sm text-center">{description}</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="col-span-2">
+        <label for="mce-EMAIL" class="sr-only">Email Address</label>
+        <input 
+          type="email" 
+          name="EMAIL" 
+          id="mce-EMAIL" 
+          placeholder="Email Address (required)" 
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-royal-purple" 
+          required 
+        />
+      </div>
+      <div>
+        <button 
+          type="submit" 
+          name="subscribe" 
+          id="mc-embedded-subscribe" 
+          class="w-full bg-royal-purple text-white font-medium py-2 px-4 rounded-md transition-all duration-300 hover:bg-purple-800"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div>
+        <label for="mce-FNAME" class="sr-only">First Name</label>
+        <input 
+          type="text" 
+          name="FNAME" 
+          id="mce-FNAME" 
+          placeholder="First Name" 
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-royal-purple" 
+        />
+      </div>
+      <div>
+        <label for="mce-LNAME" class="sr-only">Last Name</label>
+        <input 
+          type="text" 
+          name="LNAME" 
+          id="mce-LNAME" 
+          placeholder="Last Name" 
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-royal-purple" 
+        />
+      </div>
+      <div>
+        <label for="mce-MMERGE3" class="sr-only">Zip Code</label>
+        <input 
+          type="text" 
+          name="MMERGE3" 
+          id="mce-MMERGE3" 
+          placeholder="Zip Code" 
+          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-royal-purple" 
+        />
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <div class="flex items-center">
+        <input 
+          type="checkbox" 
+          name="group[3969][1]" 
+          id="mce-group[3969]-3969-0" 
+          class="h-4 w-4 text-royal-purple focus:ring-royal-purple border-gray-300 rounded" 
+        />
+        <label for="mce-group[3969]-3969-0" class="ml-2 text-gray-700">Job Opportunities</label>
+      </div>
+      <div class="flex items-center">
+        <input 
+          type="checkbox" 
+          name="group[3969][2]" 
+          id="mce-group[3969]-3969-1" 
+          class="h-4 w-4 text-royal-purple focus:ring-royal-purple border-gray-300 rounded" 
+        />
+        <label for="mce-group[3969]-3969-1" class="ml-2 text-gray-700">Fundraising</label>
+      </div>
+      <div class="flex items-center">
+        <input 
+          type="checkbox" 
+          name="group[3969][4]" 
+          id="mce-group[3969]-3969-2" 
+          class="h-4 w-4 text-royal-purple focus:ring-royal-purple border-gray-300 rounded" 
+        />
+        <label for="mce-group[3969]-3969-2" class="ml-2 text-gray-700">School News</label>
+      </div>
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>

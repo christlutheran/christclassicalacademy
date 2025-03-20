@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import NewsletterSubscribe from '../components/NewsletterSubscribe.astro';
 
 const description = "Contact Christ Classical Academy, a classical Lutheran school initiative in Manhattan, Kansas. Reach out with questions or to express interest in our educational mission.";
 const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80";
@@ -22,15 +23,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
   <section class="py-12 bg-white">
     <div class="container mx-auto">
       <div class="max-w-5xl mx-auto">
-        <div class="bg-royal-purple/10 p-6 rounded-lg border border-royal-purple/20 mb-8">
-          <h2 class="text-2xl font-bold mb-3 text-royal-purple font-serif">Opening Fall 2026 With Your Support</h2>
-          <p class="text-gray-700 mb-4">
-            Christ Classical Academy is currently in the planning stages. This initiative is being led by Christ Lutheran Church in Manhattan, Kansas, with the goal of establishing a classical Lutheran school that serves our community.
-          </p>
-          <p class="text-gray-700">
-            We welcome inquiries from interested families, potential donors, and community members who wish to support this important educational initiative.
-          </p>
-        </div>
+        <NewsletterSubscribe />
         
         <div class="grid md:grid-cols-2 gap-12">
           <div>
@@ -125,7 +118,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
               
               <button 
                 type="submit" 
-                class="bg-royal-purple text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
+                class="bg-royal-purple text-white font-medium py-3 px-6 rounded-md transition-all duration-300 hover:bg-purple-800 ease-in-out shadow-md hover:shadow-lg"
               >
                 Send Message
               </button>
@@ -172,7 +165,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
               </p>
               <a 
                 href="/support/" 
-                class="bg-royal-purple text-white font-medium py-3 px-6 rounded-md transition-all duration-300 ease-in-out shadow-md hover:shadow-lg inline-block"
+                class="bg-royal-purple text-white font-medium py-3 px-6 rounded-md transition-all duration-300 hover:bg-purple-800 ease-in-out shadow-md hover:shadow-lg inline-block"
               >
                 Learn How to Support
               </a>
@@ -183,80 +176,4 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
     </div>
   </section>
   
-  <section class="py-12 bg-slate-50">
-    <div class="container mx-auto">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-hunter-green text-center font-serif">Ways to Support</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div class="text-royal-purple mb-6">
-              <i class="fa-solid fa-hand-holding-dollar text-4xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-4 text-hunter-green font-serif">Financial Support</h3>
-            <p class="text-gray-700 mb-6">
-              Your financial contributions will help fund startup costs, scholarships, and facility preparations. Donations to Christ Classical Academy through Christ Lutheran Church are tax-deductible.
-            </p>
-            <ul class="text-gray-700 space-y-3 mb-6">
-              <li class="flex items-start">
-                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Support initial facility preparations</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Fund curriculum development</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Establish scholarship programs</span>
-              </li>
-            </ul>
-            <a href="/support/" class="text-royal-purple hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
-              Learn More About Giving
-              <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-          
-          <div class="bg-white p-8 rounded-lg shadow-md transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-            <div class="text-royal-purple mb-6">
-              <i class="fa-solid fa-calendar-alt text-4xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-4 text-hunter-green font-serif">Attend Events</h3>
-            <p class="text-gray-700 mb-6">
-              Join us for informational meetings, fundraising events, and community gatherings as we build momentum for Christ Classical Academy. Stay informed about upcoming events and opportunities to get involved.
-            </p>
-            <ul class="text-gray-700 space-y-3 mb-6">
-              <li class="flex items-start">
-                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Informational meetings</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Fundraising events</span>
-              </li>
-              <li class="flex items-start">
-                <svg class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>Community gatherings</span>
-              </li>
-            </ul>
-            <a href="/support/" class="text-royal-purple hover:text-hunter-green font-medium inline-flex items-center transition-all duration-300 hover:translate-x-1">
-              Stay Informed
-              <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </Layout>
