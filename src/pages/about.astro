@@ -21,7 +21,8 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
   
   <section class="py-12 bg-white">
     <div class="container mx-auto">
-      <div class="grid md:grid-cols-2 gap-12">
+      <div class="grid md:grid-cols-[2fr_1fr] gap-12">
+        <!-- Left Content -->
         <div>
           <h2 class="text-3xl font-bold mb-10 text-hunter-green font-serif">Our Story</h2>
           <p class="text-gray-700 mb-4">
@@ -33,17 +34,57 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
           <p class="text-gray-700">
             We are committed to partnering with parents to provide an education that nurtures the whole child—mind, body, and spirit—preparing them not just for college or career, but for a life of wisdom and virtue.
           </p>
-
+  
           <h2 class="text-3xl font-bold mt-10 mb-6 text-hunter-green font-serif">Our Motto</h2>
           <h3 class="text-2xl font-bold mb-10 text-royal-purple font-serif">Logos Gratis et Veritatis - <i>The Word of Grace and Truth</i></h3>
           <p class="text-gray-700 mt-4 mb-4">
             Taken from John 1:14 “The Word became flesh and made his dwelling among us. We have seen his glory, the glory of the one and only Son, who came from the Father, full of grace and truth.”
           </p>
+  
+          <h2 class="mt-10 text-3xl font-bold mb-10 text-hunter-green font-serif">Our Beliefs</h2>
+          <p>
+            Christ Classical Academy adheres to the historic Lutheran confessions, particularly as expressed in the Book of Concord. We believe:
+          </p>
+          <ul class="space-y-2 mt-4">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>The Bible is the inspired and inerrant Word of God, the only infallible rule of faith and practice.</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>In the Triune God: Father, Son, and Holy Spirit.</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>In the deity of Christ, His virgin birth, His sinless life, His miracles, His atoning death, His resurrection, His ascension, and His future return in power and glory.</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>That salvation is by grace alone, through faith alone, in Christ alone.</span>
+            </li>
+          </ul>
+          <p class="mt-6">
+            <a href="https://www.christlutheranmanhattan.org/beliefs/" class="text-royal-purple hover:text-hunter-green transition-colors inline-flex items-center gap-2" target="_blank">
+              Learn more about our beliefs at Christ Lutheran Church
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </p>
         </div>
-        
+  
+        <!-- Board of Education Section -->
         <div class="bg-slate-50 p-8 rounded-lg shadow-md">
           <h3 class="text-2xl font-bold mb-6 text-royal-purple font-serif">Board of Education</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="grid grid-cols-1 gap-6">
             <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
               <div class="flex-shrink-0 mb-4 sm:mb-0">
                 <img src="/images/staff/corn.jpg" alt="Joseph Corn" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
@@ -53,7 +94,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                 <p class="text-gray-600 mb-1">Chair</p>
               </div>
             </div>
-        
+            
             <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
               <div class="flex-shrink-0 mb-4 sm:mb-0">
                 <img src="/images/staff/empty.jpg" alt="Sen. Kenny Titus" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
@@ -63,17 +104,17 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                 <p class="text-gray-600 mb-1"></p>
               </div>
             </div>
-        
+
             <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
               <div class="flex-shrink-0 mb-4 sm:mb-0">
-                <img src="/images/staff/empty.jpg" alt="Kara Titus" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
+                <img src="/images/staff/empty.jpg" alt=Kara Titus" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
               </div>
               <div class="sm:ml-4">
                 <h4 class="text-lg font-bold text-hunter-green">Kara Titus</h4>
                 <p class="text-gray-600 mb-1"></p>
               </div>
             </div>
-        
+
             <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
               <div class="flex-shrink-0 mb-4 sm:mb-0">
                 <img src="/images/staff/empty.jpg" alt="Rev. Justin Panzer" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
@@ -83,7 +124,7 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                 <p class="text-gray-600 mb-1"></p>
               </div>
             </div>
-        
+
             <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
               <div class="flex-shrink-0 mb-4 sm:mb-0">
                 <img src="/images/staff/empty.jpg" alt="Rev. Larry Boye" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
@@ -93,17 +134,17 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                 <p class="text-gray-600 mb-1"></p>
               </div>
             </div>
-        
+
             <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
               <div class="flex-shrink-0 mb-4 sm:mb-0">
-                <img src="/images/staff/woelmer.jpg" alt="Rev. James Woelmer" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
+                <img src="/images/staff/empty.jpg" alt="Rev. James Woelmer" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
               </div>
               <div class="sm:ml-4">
                 <h4 class="text-lg font-bold text-hunter-green">Rev. James Woelmer</h4>
                 <p class="text-gray-600 mb-1"></p>
               </div>
             </div>
-        
+
             <div class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left">
               <div class="flex-shrink-0 mb-4 sm:mb-0">
                 <img src="/images/staff/empty.jpg" alt="Rachel Woelmer" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mx-auto sm:mx-0" />
@@ -113,59 +154,11 @@ const image = "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixli
                 <p class="text-gray-600 mb-1"></p>
               </div>
             </div>
+
           </div>
         </div>
-
       </div>
     </div>
   </section>
   
-  <section class="py-12 bg-white">
-    <div class="container mx-auto">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-6 text-hunter-green text-center font-serif">Our Beliefs</h2>
-        <div class="bg-slate-50 p-8 rounded-lg shadow-md">
-          <div class="prose prose-lg mx-auto text-gray-700">
-            <p>
-              Christ Classical Academy adheres to the historic Lutheran confessions, particularly as expressed in the Book of Concord. We believe:
-            </p><br />
-            <ul class="space-y-2">
-              <li class="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>The Bible is the inspired and inerrant Word of God, the only infallible rule of faith and practice.</span>
-              </li>
-              <li class="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>In the Triune God: Father, Son, and Holy Spirit.</span>
-              </li>
-              <li class="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>In the deity of Christ, His virgin birth, His sinless life, His miracles, His atoning death, His resurrection, His ascension, and His future return in power and glory.</span>
-              </li>
-              <li class="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-royal-purple mr-2 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <span>That salvation is by grace alone, through faith alone, in Christ alone.</span>
-              </li>
-            </ul>
-            <p class="mt-6 text-center">
-              <a href="https://www.christlutheranmanhattan.org/beliefs/" class="text-royal-purple hover:text-hunter-green transition-colors inline-flex items-center gap-2" target="_blank">
-                Learn more about our beliefs at Christ Lutheran Church
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </Layout>
