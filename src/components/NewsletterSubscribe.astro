@@ -22,6 +22,9 @@ const {
     <h2 class="text-xl font-bold text-royal-purple font-serif text-center">{title}</h2>
     <p class="text-gray-700 text-sm text-center">{description}</p>
 
+    <!-- Success/Error Message -->
+    <div id="form-response" class="hidden p-4 rounded-md text-center"></div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="col-span-2">
         <label for="mce-EMAIL" class="sr-only">Email Address</label>
@@ -110,4 +113,34 @@ const {
     </div>
   </form>
 </div>
+
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+
+<script>
+  document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const url = form.action + '&' + new URLSearchParams(formData).toString();
+
+    // Define the callback function for JSONP
+    window.jsonpCallback = function (json) {
+      const responseDiv = document.getElementById('form-response');
+      responseDiv.classList.remove('hidden');
+      responseDiv.textContent = json.msg;
+
+      if (json.result === 'success') {
+        responseDiv.classList.add('bg-green-100', 'text-green-800');
+        responseDiv.classList.remove('bg-red-100', 'text-red-800');
+      } else {
+        responseDiv.classList.add('bg-red-100', 'text-red-800');
+        responseDiv.classList.remove('bg-green-100', 'text-green-800');
+      }
+    };
+
+    // Dynamically create a script tag to handle JSONP
+    const script = document.createElement('script');
+    script.src = url + '&c=jsonpCallback';
+    document.body.appendChild(script);
+  });
+</script>
