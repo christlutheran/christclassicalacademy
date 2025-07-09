@@ -7,7 +7,7 @@ export interface FundraisingConfig {
 
 export const fundraisingConfig: FundraisingConfig = {
   goal: 200000, // $200,000 goal
-  raised: 13936.30, // Amount raised so far
+  raised: 15000, // Amount raised so far
   startDate: '2025-03-15',
   endDate: '2026-05-15'
 };
